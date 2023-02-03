@@ -1,38 +1,54 @@
-.App {
-  text-align: center;
+body{
+  background-color: black;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  /*background-image: url('https://images.pexels.com/photos/4644812/pexels-photo-4644812.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'); */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+*{
   color: white;
+  margin: 0;
+  padding: 0;
 }
 
-.App-link {
-  color: #61dafb;
+.title {
+  width: auto;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  animation: title .2s forwards 1 ease;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.center {
+  margin: auto;
+  padding: .8rem;
+  width: auto;
+  text-align: center;  
+}
+
+.wrapper {
+  display: flex;
+  margin-right: auto;
+  margin-left:  auto; 
+
+  max-width: 960px;
+
+  padding-right: 10px;
+  padding-left:  10px; 
+}
+
+@keyframes title {
+  from{
+    margin: 1.5rem;
+    filter: blur(3px);
+    padding: 0rem;
+    font-size: small;
+    background-color: rgba(12, 12, 12, 0.564); 
   }
-  to {
-    transform: rotate(360deg);
+  to{
+    margin: 1.5rem;
+    padding: 3rem;
+    font-size: xx-large;
+    background-color: rgba(173, 140, 195, 0.658);
+    border-radius: 3rem;
   }
 }
