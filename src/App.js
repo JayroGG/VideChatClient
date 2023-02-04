@@ -6,10 +6,12 @@ import './App.css'
 const App = () => {
   return <div className='center'>
     <h1 className='title'> Video Chat App</h1>
-    <VideoPlayer />
-    <Options>
-      <Notifications />
-    </Options>
+    <div className='frame'>
+      <VideoPlayer />
+      <Options>
+        <Notifications />
+      </Options>
+    </div>
   </div>
 }
 

@@ -4,7 +4,7 @@ import './VideoPlayer.css'
 
 const VideoPlayer = () => {
   const { name, callAccepted, myVideo, userVideo, callEnded, stream, call } = useContext(SocketContext)
-  return <div className='frame'>
+  return <>
     {
       stream && (
         <div>
@@ -21,7 +21,7 @@ const VideoPlayer = () => {
         </div>
       )
     }
-  </div>  
+  </>  
 }
 
 export default VideoPlayer

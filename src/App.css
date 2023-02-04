@@ -36,6 +36,14 @@ body{
   padding-left:  10px; 
 }
 
+.frame {
+  width: 75rem;
+  height: 45rem;
+  border-radius: 1.3rem;
+  margin: auto;
+  padding: 1rem;
+}
+
 @keyframes title {
   from{
     margin: 0rem;
