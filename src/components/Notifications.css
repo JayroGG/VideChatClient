@@ -1,0 +1,16 @@
+.notification {
+  color: black;
+  background-color: aquamarine;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.answer {
+  background-color: rgb(71, 177, 36);
+  color: white;
+  border-radius: .5rem;
+  margin: 1rem;
+  padding: .5rem;
+  font-size: large;
+}

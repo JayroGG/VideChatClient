@@ -55,7 +55,7 @@ const ContextProvider = ({ children }) => {
     connectionRef.current = peer
   }
 
-  //Initiate a Call
+  //Calling a User
   const callUser = (id) => {
     const peer = new Peer({ initiator: true, trickle: false, stream })
 

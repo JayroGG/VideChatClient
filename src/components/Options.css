@@ -1,14 +1,14 @@
-.call{
+.call {
   background-color: green;
   color: white;
 }
 
-.hangUp{
+.hangUp {
   background-color: red;
   color: white;
 }
 
-.box{
+.box {
   align-items: center;
   text-align: center;
   height: 30rem;
@@ -16,14 +16,87 @@
   box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
 }
 
-.options{
+.options {
   color: rgb(54, 94, 129);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-right: auto;
+  margin-left: auto;
 }
 
-.input{
+.account {
+  background-color: white;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 1rem;
+  padding-block: 1rem;
+  width: 50%;
+  background: rgba(255, 255, 255, 0.546);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.makeCall {
+  background-color: white;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 1rem;
+  padding-block: 1rem;
+  width: 50%;
+  background: rgba(255, 255, 255, 0.546);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.input {
+  margin: 1rem;
+  text-align: center;
+  font-size: x-large;
   border-radius: 1rem;
   height: 3rem;
   width: 8rem;
+  box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+}
+
+.font {
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.button {
+  color: rgb(90, 107, 123);
+  border-radius: .5rem;
+  margin: 1rem;
+  padding: .5rem;
+  font-size: large;
+}
+
+.call {
+  background-color: rgb(71, 177, 36);
+  color: white;
+  border-radius: .5rem;
+  margin: 1rem;
+  padding: .5rem;
+  font-size: large;
+}
+
+.hang {
+  background-color: rgb(186, 77, 97);
+  color: white;
+  border-radius: .5rem;
+  margin: 1rem;
+  padding: .5rem;
+  font-size: large;
 }
 
 label {

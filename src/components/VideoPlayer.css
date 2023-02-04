@@ -1,6 +1,6 @@
 .frame {
-  width: 60rem;
-  height: 35rem;
+  width: auto;
+  height: auto;
   border: 3px solid #ccc;
   background: #eee;
   margin: auto;
@@ -14,18 +14,19 @@
   animation: myvideo .5s forwards 1 ease-in;
 }
 
-.userVideo{
+.userVideo {
   border-radius: 2rem;
   width: auto;
   height: auto;
 }
 
 @keyframes myvideo {
-  from{
+  from {
     width: 0;
     height: 0;
   }
-  to{
+
+  to {
     border-radius: 2rem;
     width: 45rem;
   }
