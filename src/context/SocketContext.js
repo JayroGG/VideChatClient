@@ -6,7 +6,7 @@ const SocketContext = createContext()
 
 const socket = io('http://localhost:4000')
 
-const ContexProvider = ({ children }) => {
+const ContextProvider = ({ children }) => {
   //States
   const [stream, setStream] = useState(null)
   const [me, setMe] = useState('')
@@ -104,4 +104,4 @@ const ContexProvider = ({ children }) => {
   )
 }
 
-export { ContexProvider, SocketContext }
+export { ContextProvider, SocketContext }

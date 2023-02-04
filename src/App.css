@@ -7,12 +7,12 @@ body{
 }
 
 *{
-  color: white;
   margin: 0;
   padding: 0;
 }
 
 .title {
+  color: white;
   width: auto;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   animation: title .2s forwards 1 ease;
@@ -38,16 +38,16 @@ body{
 
 @keyframes title {
   from{
-    margin: 1.5rem;
+    margin: 0rem;
     filter: blur(3px);
     padding: 0rem;
     font-size: small;
     background-color: rgba(12, 12, 12, 0.564); 
   }
   to{
-    margin: 1.5rem;
-    padding: 3rem;
-    font-size: xx-large;
+    margin: 1rem;
+    padding: 1rem;
+    font-size: large;
     background-color: rgba(173, 140, 195, 0.658);
     border-radius: 3rem;
   }
