@@ -14,3 +14,9 @@
   padding: .5rem;
   font-size: large;
 }
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}

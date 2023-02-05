@@ -4,22 +4,24 @@ import './VideoPlayer.css'
 
 const VideoPlayer = () => {
   const { name, callAccepted, myVideo, userVideo, callEnded, stream, call } = useContext(SocketContext)
+  const myVideoClass = callAccepted ? 'myVideoSmall' : 'myVideo'
   return <>
-    {
-      stream && (
-        <div>
-          <h4>{name || 'Name'}</h4>
-          <video playsInline muted ref={myVideo} autoPlay className='myVideo' />
-        </div>)
-    }
-
     {
       callAccepted && !callEnded && (
         <div>
-          <h4>{call.name || 'Users Name'}</h4>
+          <h4 >{call.name || 'Unkown'}</h4>
           <video playsInline muted ref={userVideo} autoPlay className='userVideo' />
         </div>
       )
+    }
+    {
+      stream && (
+        <div>
+          <h4>{
+            name || 'You'
+          }</h4>
+          <video playsInline muted ref={myVideo} autoPlay className={myVideoClass} />
+        </div>)
     }
   </>  
 }

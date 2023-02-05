@@ -22,11 +22,19 @@ const ContextProvider = ({ children }) => {
 
   //Asking user por video and audio permissions
   useEffect(() => {
-    navigator.mediaDevices.getUserMedia({ video: true, audio: true })
-      .then(currentStream => {
-        setStream(currentStream)
-        myVideo.current.srcObject = currentStream
-      })
+    const getMedia = async () => {
+      try {
+        await navigator.mediaDevices.getUserMedia({ video: true, audio: true })
+          .then(currentStream => {
+            setStream(currentStream)
+            myVideo.current.srcObject = currentStream
+          })
+      } catch (error) {
+        console.log(error)
+      }
+    }
+    
+    getMedia()
 
     socket.on('me', id => setMe(id))
 

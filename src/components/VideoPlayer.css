@@ -11,16 +11,29 @@
   border-radius: 2rem;
   width: auto;
   height: auto;
-  animation: myvideo .5s forwards 1 ease-in;
+  animation: myVideo .5s forwards 1 ease-in;
 }
 
 .userVideo {
   border-radius: 2rem;
-  width: auto;
+  width: 42rem;
   height: auto;
+  animation: myVideo .5s forwards 1 ease;
 }
 
-@keyframes myvideo {
+.myVideoSmall {
+  border-radius: 2rem;
+  width: auto;
+  height: auto;
+  animation: myVideoSmaller .5s forwards 1 ease;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+@keyframes myVideo {
   from {
     width: 0;
     height: 0;
@@ -28,6 +41,24 @@
 
   to {
     border-radius: 2rem;
+    width: 42rem;
+  }
+}
+
+@keyframes myVideoSmaller {
+  from {
     width: 45rem;
+    height: auto;
+    position: absolute;
+    top: 3rem;
+    left: 30rem;
+  }
+
+  to {
+    position: absolute;
+    top: 26rem; 
+    left: 55rem;
+    border-radius: 2rem;
+    width: 10rem;
   }
 }
