@@ -8,7 +8,7 @@ const socket = io('http://localhost:4000')
 
 const ContextProvider = ({ children }) => {
   //States
-  const [stream, setStream] = useState(null)
+  const [stream, setStream] = useState()
   const [me, setMe] = useState('')
   const [call, setCall] = useState({})
   const [callAccepted, setCallAccepted] = useState(false)
