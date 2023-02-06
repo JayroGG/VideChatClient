@@ -1,22 +1,116 @@
-.notification {
-  color: black;
-  background-color: aquamarine;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.calling {
+  font-family: 'Courier New', Courier, monospace;
+  animation: ring .4s forwards infinite;
 }
-
 .answer {
   background-color: rgb(71, 177, 36);
   color: white;
-  border-radius: .5rem;
+  border-radius: 1rem;
   margin: 1rem;
-  padding: .5rem;
-  font-size: large;
+  padding: 2rem;
+  font-size: x-large;
+}
+
+.answer:hover {
+  background-color: rgb(171, 218, 30);
+  animation: smallerB .5s forwards 1;
+}
+
+.answer:not(:hover) {
+  animation: bigger .5s forwards 1;
+}
+
+.decline {
+  background-color: rgb(186, 77, 97);
+  color: white;
+  border-radius: 1rem;
+  margin: 1rem;
+  padding: 2rem;
+  font-size: x-large;
+}
+
+.decline:hover {
+  background-color: rgb(234, 96, 121);
+  animation: smallerB .5s forwards 1;
+}
+
+.decline:not(:hover){
+  animation: bigger .5s forwards 1;
 }
 
 .wrapper {
   display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.notification {
+  color: rgba(87, 204, 159, 0.768);
+  display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  position: absolute;  
+  background: rgba(44, 145, 145, 0.2);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(14.5px);
+  -webkit-backdrop-filter: blur(14.5px);
+  border-radius: 3rem;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  animation: notification 1s forwards 1 ease;
+}
+
+@keyframes smallerB {
+  from {
+    padding: 2rem;
+    font-size: x-large;
+  }
+
+  to {
+    border-radius: 1.5rem;
+    padding: 1.8rem;
+    font-size: large;
+  }
+}
+
+@keyframes bigger {
+  from {
+    border-radius: 1.5rem;
+    padding: 1.8rem;
+    font-size: large;
+  }
+
+  to {
+    border-radius: 1rem;
+    padding: 2rem;
+    font-size: x-large;
+  }
+
+}
+
+@keyframes notification {
+  from{
+    width: 30rem;
+    height: 15rem;
+    top: 10%;
+  }
+  to{
+    width: 35rem;
+    height: 20rem;
+    top: 20%;
+  }
+}
+
+@keyframes ring {
+  0%{
+    transform: rotate(1deg);
+  }
+  33%{
+    transform: rotate(0deg);
+  }
+  66%{
+    transform: rotate(-1deg);
+  }
+  100%{
+    transform: rotate(0deg);
+  }
 }

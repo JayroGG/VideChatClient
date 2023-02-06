@@ -8,14 +8,16 @@ const Notifications = () => {
   return <>
     {
       call.isRecivingCall && !callAccepted && (
-        <div>
-          <h1>{call.name || 'Unkown'} is calling: </h1>
-          <button type="buttons" className='answer' onClick={answerCall}>
-            AswerCall
-          </button>
-          <button type="buttons" className='hang' onClick={leaveCall}>
-            Decline
-          </button>
+        <div className='notification'>
+          <h1 className='calling'>{call.name || 'Unkown'} is calling ... </h1>
+          <div className='wrapper'>
+            <button type="buttons" className='answer' onClick={answerCall}>
+              Answer
+            </button>
+            <button type="buttons" className='decline' onClick={leaveCall}>
+              Decline
+            </button>
+          </div>
         </div>
       )
     }

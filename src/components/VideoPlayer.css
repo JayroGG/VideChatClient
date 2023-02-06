@@ -6,8 +6,15 @@
   margin: auto;
   padding: 1rem;
 }
-
+ .me {
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: rgb(184, 201, 158);
+ }
 .myVideo {
+  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  /* Mozilla */
   border-radius: 2rem;
   width: auto;
   height: auto;
@@ -22,13 +29,25 @@
 }
 
 .myVideoSmall {
+  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  /* Mozilla */
   border-radius: 2rem;
   width: auto;
   height: auto;
   animation: myVideoSmaller .5s forwards 1 ease;
 }
 
-.wrapper {
+.myVideoSmall:hover {
+  animation: littleBigger 1s forwards 1 ease;
+}
+
+.myVideoSmall:not(:hover){
+  animation: smallerAgain 1s forwards 1 ease;
+}
+
+my .wrapper {
   display: flex;
   flex-direction: column;
 }
@@ -56,7 +75,43 @@
 
   to {
     position: absolute;
-    top: 26rem; 
+    top: 26rem;
+    left: 55rem;
+    border-radius: 2rem;
+    width: 10rem;
+  }
+}
+
+@keyframes littleBigger {
+  from {
+    position: absolute;
+    top: 26rem;
+    left: 55rem;
+    border-radius: 2rem;
+    width: 10rem;
+  }
+
+  to {
+    position: absolute;
+    top: 22.5rem;
+    left: 50rem;
+    border-radius: 2rem;
+    width: 15rem;
+  }
+}
+
+@keyframes smallerAgain {
+  from {
+    position: absolute;
+    top: 22.5rem;
+    left: 50rem;
+    border-radius: 2rem;
+    width: 15rem;
+  }
+
+  to {
+    position: absolute;
+    top: 26rem;
     left: 55rem;
     border-radius: 2rem;
     width: 10rem;

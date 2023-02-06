@@ -11,7 +11,7 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  /*background-image: url('https://images.pexels.com/photos/4644812/pexels-photo-4644812.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'); */
+  background-image: url('https://images.pexels.com/photos/752484/pexels-photo-752484.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'); 
 }
 
 * {
@@ -20,6 +20,7 @@ body {
 }
 
 .title {
+  color: rgb(180, 168, 184);
   font-size: x-large;
   width: auto;
   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -34,7 +35,6 @@ body {
 
 .center {
   margin: auto;
-  padding: .8rem;
   width: auto;
   text-align: center;
 }
@@ -59,6 +59,6 @@ body {
   border: 1px solid rgba(255, 255, 255, 0.18);
   width: auto;
   height: 46rem;
-  margin: auto;
+  margin: 0%;
   padding: 1rem;
 }

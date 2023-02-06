@@ -32,7 +32,11 @@ const Options = ({ children }) => {
     </div>
 
     <div className='makeCall'>
-      <h1 className='options'>Make a Call</h1>
+      <h1 className='options'>
+        {
+          callAccepted && !callEnded ? name+' is online' : 'Make a Call'
+        }
+      </h1>
       <form noValidate autoComplete='off'>
         <label className='font' >ID</label>
         <input type="text" name="ID" value={idToCall} className='input' onChange={changeIdToCall} />
@@ -42,9 +46,6 @@ const Options = ({ children }) => {
             : (<button type='button' className='call' onClick={handleCall}> Call </button>)
         }
       </form>
-    </div>
-    <div>
-      
     </div>
     {children}
   </div>
