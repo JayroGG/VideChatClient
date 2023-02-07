@@ -12,6 +12,12 @@
   color: rgb(184, 201, 158);
 }
 
+.caller {
+  font-size: large;
+  color: #6191df;
+  -webkit-text-stroke: .5px rgb(2, 2, 2);
+}
+
 .myVideo {
   transform: rotateY(180deg);
   -webkit-transform: rotateY(180deg);
@@ -77,18 +83,18 @@ my .wrapper {
 
   to {
     position: absolute;
-    top: 26rem;
-    left: 55rem;
     border-radius: 2rem;
     width: 10rem;
+    top: 26rem;
+    left: 50rem;
   }
 }
 
 @keyframes littleBigger {
   from {
     position: absolute;
-    top: 26rem;
-    left: 55rem;
+    top: 26.3rem;
+    left: 56rem;
     border-radius: 2rem;
     width: 10rem;
   }
@@ -96,7 +102,7 @@ my .wrapper {
   to {
     position: absolute;
     top: 22.5rem;
-    left: 50rem;
+    left: 51rem;
     border-radius: 2rem;
     width: 15rem;
   }
@@ -106,15 +112,15 @@ my .wrapper {
   from {
     position: absolute;
     top: 22.5rem;
-    left: 50rem;
+    left: 51rem;
     border-radius: 2rem;
     width: 15rem;
   }
 
   to {
     position: absolute;
-    top: 26rem;
-    left: 55rem;
+    top: 26.3rem;
+    left: 56rem;
     border-radius: 2rem;
     width: 10rem;
   }

@@ -51,12 +51,12 @@
 }
 
 .notification {
-  color: rgba(87, 204, 159, 0.768);
+  color: rgba(87, 204, 159, 0.328);
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   position: absolute;  
-  background: rgba(44, 145, 145, 0.2);
+  background: rgba( 11, 21, 27, 0.25 );
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   backdrop-filter: blur(14.5px);
   -webkit-backdrop-filter: blur(14.5px);

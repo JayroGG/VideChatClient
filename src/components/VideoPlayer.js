@@ -9,7 +9,7 @@ const VideoPlayer = () => {
     {
       callAccepted && !callEnded && (
         <div>
-          <h4 >{call.name || 'Unkown'}</h4>
+          <h4 className='caller'>{call.name || 'Unkown'}</h4>
           <video playsInline ref={userVideo} autoPlay className='userVideo' />
         </div>
       )
