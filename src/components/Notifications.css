@@ -1,7 +1,13 @@
 .calling {
+  padding: 1rem;
+  font-size: 3.5rem;
+  display: flex;
+  flex-direction: column;
+  -webkit-text-stroke: 1px black;
   font-family: 'Courier New', Courier, monospace;
   animation: ring .4s forwards infinite;
 }
+
 .answer {
   background-color: rgb(71, 177, 36);
   color: white;

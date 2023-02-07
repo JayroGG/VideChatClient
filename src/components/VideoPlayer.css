@@ -6,10 +6,12 @@
   margin: auto;
   padding: 1rem;
 }
- .me {
-  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+.me {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   color: rgb(184, 201, 158);
- }
+}
+
 .myVideo {
   transform: rotateY(180deg);
   -webkit-transform: rotateY(180deg);
@@ -43,7 +45,7 @@
   animation: littleBigger 1s forwards 1 ease;
 }
 
-.myVideoSmall:not(:hover){
+.myVideoSmall:not(:hover) {
   animation: smallerAgain 1s forwards 1 ease;
 }
 

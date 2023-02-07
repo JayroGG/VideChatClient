@@ -12,7 +12,7 @@ const Notifications = () => {
           <h1 className='calling'>{call.name || 'Unkown'} is calling ... </h1>
           <div className='wrapper'>
             <button type="buttons" className='answer' onClick={answerCall}>
-              Answer
+              Accept
             </button>
             <button type="buttons" className='decline' onClick={leaveCall}>
               Decline

@@ -5,7 +5,7 @@ import './App.css'
 
 const App = () => {
   return <div className='center'>
-    <h1 className='title'> Video Chat App</h1>
+    <h1 className='title'>Chatty</h1>
     <div className='frame'>
       <VideoPlayer />
       <Options>
