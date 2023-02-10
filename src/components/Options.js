@@ -1,23 +1,17 @@
 import './Options.css'
 import { CopyToClipboard } from 'react-copy-to-clipboard'
 import { SocketContext } from '../context/SocketContext'
-import { useContext, useState } from 'react'
+import { useContext} from 'react'
+import Call from './Call'
 
 const Options = ({ children }) => {
-  const { me, callAccepted, name, setName, callEnded, leaveCall, callUser } = useContext(SocketContext)
-  const [idToCall, setIdToCall] = useState('')
+  const { me, name, setName} = useContext(SocketContext)
+  
 
   const changeName = evt => {
     setName(evt.target.value)
   }
 
-  const changeIdToCall = evt => {
-    setIdToCall(evt.target.value)
-  }
-
-  const handleCall = () => {
-    callUser(idToCall)
-  }
 
   return <div className='options'>
     <div className='account'>
@@ -30,23 +24,7 @@ const Options = ({ children }) => {
         </CopyToClipboard>
       </form>
     </div>
-
-    <div className='makeCall'>
-      <h1 className='options'>
-        {
-          callAccepted && !callEnded ? name+' is online' : 'Make a Call'
-        }
-      </h1>
-      <form noValidate autoComplete='off'>
-        <label className='font' >ID</label>
-        <input type="text" name="ID" value={idToCall} className='input' onChange={changeIdToCall} />
-        {
-          callAccepted && !callEnded
-            ? (<button type='button' className='hang' onClick={leaveCall}>Hang Up</button>)
-            : (<button type='button' className='call' onClick={handleCall}> Call </button>)
-        }
-      </form>
-    </div>
+    <Call />    
     {children}
   </div>
 }

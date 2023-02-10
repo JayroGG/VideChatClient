@@ -1,22 +1,4 @@
-.call {
-  background-color: green;
-  color: white;
-}
-
-.hangUp {
-  background-color: red;
-  color: white;
-}
-
-.box {
-  align-items: center;
-  text-align: center;
-  height: 30rem;
-  width: 30rem;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
-}
-
-.options {
+.wrapper {
   color: rgb(54, 94, 129);
   display: flex;
   flex-direction: row;
@@ -26,7 +8,8 @@
   margin-left: auto;
 }
 
-.account {
+.makeCall {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   backdrop-filter: blur(6px);
   -webkit-backdrop-filter: blur(6px);
   background-color: white;
@@ -50,31 +33,30 @@
   box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
 }
 
-.wrapper {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  margin-right: auto;
-  margin-left: auto;
-}
-
-.button {
-  background-color: rgb(183, 203, 68);
-  color: rgb(0, 0, 0);
+.call {
+  width: 10rem;
+  background-color: rgb(71, 177, 36);
+  color: white;
   border-radius: .5rem;
   margin: 1rem;
   padding: 1rem;
   font-size: large;
 }
 
-.button:hover {
-  color: rgb(60, 101, 97);
-  background-color: rgb(215, 230, 14);
+.call:hover {
+  background-color: rgb(171, 218, 30);
 }
 
-label {
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  color: black;
-  font-size: xx-large;
+.hang {
+  background-color: rgb(186, 77, 97);
+  color: white;
+  border-radius: .5rem;
+  margin: 1rem;
+  padding: 1rem;
+  font-size: large;
 }
+
+.hang:hover {
+  background-color: rgb(234, 96, 121);
+}
+
